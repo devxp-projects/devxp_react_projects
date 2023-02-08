@@ -33,4 +33,4 @@ const theme = createTheme({
 
 export default theme;
 
-// use the exported theme object in components where needed.
+// use the exported theme object in components where needed in order to access the colors from the theme object. Also wrap the component with the ThemeProvider component imported from '@mui/material/styles' e.g -> <ThemeProvider theme={theme}>...
