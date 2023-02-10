@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import Head from "next/head";
-import "./styles.css";
+import "../styles/styles.css";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "food-hut/utils/theme";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -17,9 +17,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <ThemeProvider theme={theme(isDarkModeEnabled ? "dark" : "light")}>
         <CssBaseline />
-        <main className="app">
-          <Component {...pageProps} />
-        </main>
+        <Component {...pageProps} />
       </ThemeProvider>
     </>
   );
