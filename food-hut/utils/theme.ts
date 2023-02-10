@@ -10,27 +10,33 @@ export const roboto = Roboto({
 });
 
 // Creating a theme instance.
-const theme = createTheme({
-  palette: {
-    // main color for light theme
-    primary: {
-      main: "#FFFFFF",
-    },
+const theme = (mode: "light" | "dark") =>
+  createTheme({
+    palette: {
+      primary: {
+        main: "#F54748",
+      },
+      mode: mode,
 
-    // main color for dark theme
-    secondary: {
-      main: "#0D0D0D",
+      secondary: {
+        main: "#FDC55E",
+      },
+      error: {
+        main: red.A400,
+      },
     },
-
-    error: {
-      main: red.A400,
+    typography: {
+      fontFamily: roboto.style.fontFamily,
     },
-  },
-  typography: {
-    fontFamily: roboto.style.fontFamily,
-  },
-});
+    components: {
+      MuiTypography: {
+        styleOverrides: {
+          root: {
+            color: mode == "light" ? "#191919" : "#FFFFFF",
+          },
+        },
+      },
+    },
+  });
 
 export default theme;
-
-// use the exported theme object in components where needed in order to access the colors from the theme object. Also wrap the component with the ThemeProvider component imported from '@mui/material/styles' e.g -> <ThemeProvider theme={theme}>.
