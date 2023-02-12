@@ -11,7 +11,7 @@ interface TextFieldProps {
   required?: boolean;
   sx?: object;
   value?: string | number | boolean | object;
-  type;
+  type?: string;
 }
 
 function TextFieldComponent({
