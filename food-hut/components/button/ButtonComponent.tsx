@@ -14,7 +14,6 @@ interface ButtonProps {
     | "warning";
   size?: "small" | "medium" | "large";
   sx?: object;
-  variant?: "text" | "outlined" | "contained";
   href?: string;
   disabled?: boolean;
 }
@@ -25,7 +24,6 @@ function ButtonComponent({
   color,
   size,
   sx,
-  variant,
   href,
   disabled,
 }: ButtonProps) {
@@ -34,12 +32,21 @@ function ButtonComponent({
       classes={classes}
       color={color}
       size={size}
-      sx={sx}
-      variant={variant}
+      sx={{
+        ...sx,
+        borderRadius: "100px",
+        textTransform: "none",
+        fontFamily: "Sofia Pro",
+        fontStyle: "normal",
+        fontWeight: "400",
+        fontSize: "18px",
+        lineHeight: "24px",
+      }}
+      variant="contained"
       href={href}
       disabled={disabled}
     >
-      {children && children}
+      {children}
     </Button>
   );
 }
