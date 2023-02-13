@@ -1,0 +1,19 @@
+@media (width > 950px) {
+  .menu {
+    display: none;
+  }
+
+  .p {
+    display: block;
+  }
+}
+
+@media (width <= 950px) {
+  .menu {
+    display: block;
+  }
+
+  .p {
+    display: none;
+  }
+}

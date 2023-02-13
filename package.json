@@ -15,6 +15,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
     "@next/font": "13.1.2",
     "@nrwl/eslint-plugin-nx": "15.6.3",
@@ -38,6 +39,7 @@
     "@nrwl/jest": "15.6.3",
     "@nrwl/js": "15.6.3",
     "@nrwl/linter": "15.6.3",
+    "@nrwl/nx-cloud": "latest",
     "@nrwl/react": "15.6.3",
     "@swc/core": "^1.2.173",
     "@swc/jest": "0.2.20",
@@ -63,8 +65,7 @@
     "sass": "1.55.0",
     "ts-jest": "28.0.5",
     "ts-node": "10.9.1",
-    "vite": "^4.0.1",
-    "@nrwl/nx-cloud": "latest"
+    "vite": "^4.0.1"
   },
   "nx": {
     "targets": {}
