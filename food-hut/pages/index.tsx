@@ -1,3 +1,4 @@
+
 import styles from "./index.module.css";
 
 export function Index() {
@@ -6,6 +7,7 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
+
   return (
     <div className={styles.page}>
       <div className="wrapper">
@@ -408,6 +410,7 @@ export function Index() {
           </p>
         </div>
       </div>
+    
     </div>
   );
 }

@@ -36,6 +36,16 @@ const theme = (mode: "light" | "dark") =>
           },
         },
       },
+
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            variant: "contained",
+            borderRadius: "100px",
+            padding: "10px 20px 11px 20px",
+          },
+        },
+      },
     },
   });
 

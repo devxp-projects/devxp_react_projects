@@ -16,6 +16,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   // MUI useMediaQuery hook for checking which mode (light or dark) a broswer is set to
   const isDarkModeEnabled = useMediaQuery("(prefers-color-scheme: dark)"); // returns true if browser dark mode is enabled
   // MUI useMediaQuery hook for checking which mode (light or dark) a broswer is set to
+
   return (
     <>
       <Head>
