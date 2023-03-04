@@ -1,0 +1,77 @@
+{
+  "name": "school-landing-page",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "school-landing-page",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "school-landing-page",
+        "outputPath": "dist/school-landing-page"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "school-landing-page"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "school-landing-page:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "school-landing-page:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "school-landing-page:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "school-landing-page:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "school-landing-page/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "school-landing-page/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
