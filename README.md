@@ -6,7 +6,12 @@ Each app is divided into two. The main app and the test app. The main app has th
 
 ## How to run an App
 We use ```yarn``` as our package manager. So under no circumstance should ```npm``` be used.
+## Install the packages 
 
+```bash
+    yarn install 
+
+```
 Each app is run by running yarn plus the name of your cohort, - the environment. So to run Ch3 web (React(NextJS)) just run 
 ```bash
     yarn ch3-web
