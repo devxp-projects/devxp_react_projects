@@ -31,6 +31,7 @@ export default function Footer() {
   };
   return (
     <Box
+      data-testid={"mainBox"}
       sx={{
         height: "587px",
         width: "calc((1440/1440) * 100vw)",
@@ -189,6 +190,7 @@ export default function Footer() {
         </Grid>
       </Grid>
       <Box
+        data-testid={"signupBox"}
         sx={{
           position: "relative",
           top: "238px",
