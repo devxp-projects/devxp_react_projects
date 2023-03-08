@@ -9,10 +9,10 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to school-landing-page!</title>
       </Head>
       <main className="app">
-        <Component {...pageProps}/>
+        <Component {...pageProps} />
       </main>
     </>
   );
-};
+}
 
 export default CustomApp;

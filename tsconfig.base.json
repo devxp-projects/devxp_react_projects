@@ -14,6 +14,9 @@
     "paths": {
       "components": [
         "components/src/index.ts"
+      ],
+      "school-landing-page/components": [
+        "school-landing-page/components/src/index.ts"
       ]
     }
   },
