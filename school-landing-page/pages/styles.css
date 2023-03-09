@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  min-width: 801px;
+  max-width: 1440px;
+}
+
 body {
   font-family: inherit;
   line-height: inherit;
@@ -45,7 +51,6 @@ pre {
 
 svg {
   display: block;
-  vertical-align: middle;
   shape-rendering: auto;
   text-rendering: optimizeLegibility;
 }
@@ -74,7 +79,6 @@ pre {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -233,8 +237,6 @@ pre {
   background-color: hsla(162, 47%, 50%, 1);
 }
 
-.list-item-link:hover>span {}
-
 .list-item-link:hover>span>span {
   color: rgba(243, 244, 246, 1);
 }
@@ -242,8 +244,6 @@ pre {
 .list-item-link:hover svg:last-child {
   transform: translateX(0.25rem);
 }
-
-#other-links {}
 
 .button-pill {
   padding: 1.5rem 2rem;

@@ -1,12 +1,8 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import { Grid, Typography, Box, InputBase, Button } from "@mui/material";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InputBase from "@mui/material/InputBase";
-import Button from "@mui/material/Button";
 
 export default function Footer() {
   let body2Style1 = {
