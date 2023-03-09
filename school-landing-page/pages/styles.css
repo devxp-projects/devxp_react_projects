@@ -6,12 +6,6 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  min-width: 801px;
-  max-width: 1440px;
-}
-
 body {
   font-family: inherit;
   line-height: inherit;
