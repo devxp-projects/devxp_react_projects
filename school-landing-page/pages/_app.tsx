@@ -14,11 +14,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600&display=swap"
           rel="stylesheet"
         />
       </Head>
-      <main className="app">
+      <main>
         <Component {...pageProps} />
       </main>
     </>

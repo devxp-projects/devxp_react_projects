@@ -19,6 +19,7 @@ export default function MeetOurInstructors() {
         height: "64.89rem",
         width: "80rem",
         backgroundColor: "#FFFFFF",
+        marginBottom: "4.497rem",
       }}
     >
       <Box
@@ -108,7 +109,7 @@ export default function MeetOurInstructors() {
             src="../src/assets/images/MoiBG1.gif"
             sx={{
               position: "relative",
-              top: "-18rem",
+              top: "-20rem",
               left: "-20.159rem",
               opacity: "0.2",
               mixBlendMode: "color-dodge",
@@ -121,7 +122,7 @@ export default function MeetOurInstructors() {
             src="../src/assets/images/MoiBG2.gif"
             sx={{
               position: "relative",
-              top: "-18rem",
+              top: "-20rem",
               left: "-20.143rem",
               opacity: "0.2",
               mixBlendMode: "color-dodge",
@@ -135,7 +136,7 @@ export default function MeetOurInstructors() {
             src="../src/assets/images/MoiBG3.gif"
             sx={{
               position: "relative",
-              top: "-37.2rem",
+              top: "-39.2rem",
               left: "46.5rem",
               opacity: "0.2",
               mixBlendMode: "color-dodge",
