@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import MoiCard from "school-landing-page/pages/MoiCard";
 
-test("Render footer", () => {
+test("MoiCard", () => {
   render(
     <MoiCard
       source={"SeniorDeveloper.png"}

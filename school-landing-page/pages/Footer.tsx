@@ -9,11 +9,11 @@ export default function Footer() {
     fontFamily: "Open Sans",
     fontStyle: "normal",
     fontWeight: "400",
-    fontSize: "14px",
-    lineHeight: "25px",
+    fontSize: "0.778rem",
+    lineHeight: "1.388rem",
     color: "#FFFFFF",
     textTransform: "capitalize",
-    marginBottom: "8px",
+    marginBottom: "0.444rem",
     width: "auto",
     display: "block",
   };
@@ -21,34 +21,34 @@ export default function Footer() {
   body2Style2.fontFamily = "Poppins";
   let icons = {
     color: "#0AC75ACC",
-    marginRight: "24px",
-    width: "calc((24/1440) * 100vw)",
-    height: "calc((24/1440) * 100vw)",
+    marginRight: "1.33rem",
+    width: "1.333rem",
+    height: "1.333rem",
   };
   return (
     <Box
       data-testid={"mainBox"}
       sx={{
-        height: "587px",
-        width: "calc((1440/1440) * 100vw)",
+        height: "32.598rem",
+        width: "80rem",
         backgroundColor: "#000000",
       }}
     >
       <Grid
         container
-        spacing={2}
         sx={{
           position: "relative",
-          top: "120px",
-          width: "100%",
-          margin: "0",
+          top: "6.668rem",
+          width: "65.9rem",
+          marginLeft: "5.553rem",
+          marginRight: "0",
         }}
       >
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((100/1440) * 100vw) !important",
+            padding: "0 !important",
+            width: "16.438rem",
           }}
         >
           <Typography
@@ -57,11 +57,11 @@ export default function Footer() {
               fontFamily: "Source Sans Pro",
               fontStyle: "normal",
               fontWeight: "600",
-              fontSize: "32.8px",
-              lineHeight: "41px",
+              fontSize: "1.821rem",
+              lineHeight: "2.289rem",
               margin: "0",
               color: "#FFFFFF",
-              marginBottom: "31px",
+              marginBottom: "1.682rem",
             }}
           >
             WiSchool
@@ -72,29 +72,33 @@ export default function Footer() {
               fontFamily: "Poppins",
               fontStyle: "normal",
               fontWeight: 400,
-              fontSize: "16px",
-              lineHeight: "24px",
-              letterSpacing: "1px",
+              fontSize: "0.889rem",
+              lineHeight: "1.333rem",
+              letterSpacing: "0.056rem",
               textTransform: "lowercase",
-              width: "calc((296/1440) * 100vw)",
-              height: "72px",
+              width: "16.438rem",
+              height: "3.938rem",
               color: "#FFFFFF",
-              marginBottom: "31px",
+              marginBottom: "1.783rem",
             }}
           >
             We are not here to sell you products, we sell value through our
             expertise.
           </Typography>
-          <FacebookRoundedIcon sx={icons} />
-          <TwitterIcon sx={icons} />
-          <InstagramIcon sx={icons} />
-          <LinkedInIcon sx={icons} />
+          <Box sx={{ width: "10rem", height: "1.333rem" }}>
+            <FacebookRoundedIcon sx={icons} />
+            <TwitterIcon sx={icons} />
+            <InstagramIcon sx={icons} />
+            <LinkedInIcon sx={{ ...icons, marginRight: "0" }} />
+          </Box>
         </Grid>
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((91/1440) * 100vw) !important",
+            padding: "0 !important",
+            marginLeft: "calc((91/1440) * 100vw) !important",
+            width: "4.387rem",
+            height: "8.719rem",
           }}
         >
           <Typography variant="body2" sx={body2Style1}>
@@ -116,8 +120,10 @@ export default function Footer() {
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((83/1440) * 100vw) !important",
+            padding: "0 !important",
+            marginLeft: "3.999rem",
+            width: "4.387rem",
+            height: "6.886rem",
           }}
         >
           <Typography variant="body2" sx={body2Style1}>
@@ -136,8 +142,10 @@ export default function Footer() {
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((81/1440) * 100vw) !important",
+            padding: "0 !important",
+            marginLeft: "3.054rem",
+            width: "9.219rem",
+            height: "9.552rem",
           }}
         >
           <Typography variant="body2" sx={body2Style1}>
@@ -156,8 +164,10 @@ export default function Footer() {
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((74/1440) * 100vw) !important",
+            padding: "0 !important",
+            marginLeft: "3.054rem",
+            width: "5.5rem",
+            height: "5.054rem",
           }}
         >
           <Typography variant="body2" sx={body2Style2}>
@@ -173,8 +183,10 @@ export default function Footer() {
         <Grid
           item
           sx={{
-            paddingTop: "0 !important",
-            paddingLeft: "calc((77/1440) * 100vw) !important",
+            padding: "0 !important",
+            marginLeft: "3.813rem",
+            width: "6.938rem",
+            height: "3.221rem",
           }}
         >
           <Typography variant="body2" sx={body2Style2}>
@@ -189,12 +201,12 @@ export default function Footer() {
         data-testid={"signupBox"}
         sx={{
           position: "relative",
-          top: "238px",
+          top: "12.833rem",
           left: "auto",
           right: "auto",
           margin: "auto",
-          width: "calc((545/1440) * 100vw)",
-          height: "105px",
+          width: "30.266rem",
+          height: "5.831rem",
           textAlign: "center",
         }}
       >
@@ -206,10 +218,11 @@ export default function Footer() {
             fontFamily: "Poppins",
             fontStyle: "normal",
             fontWeight: "600",
-            fontSize: "24px",
-            lineHeight: "36px",
+            fontSize: "1.333rem",
+            lineHeight: "2rem",
             color: "#FFFFFF",
-            width: "calc((425/1440) * 100vw)",
+            width: "21.188rem",
+            marginBottom: "0.943rem",
           }}
         >
           Subscribe to get latest updates
@@ -218,9 +231,8 @@ export default function Footer() {
           container
           spacing={0}
           sx={{
-            position: "relative",
-            top: "16px",
-            width: "100%",
+            width: "30.267rem",
+            height: "2.888rem",
             margin: "0",
           }}
         >
@@ -229,20 +241,20 @@ export default function Footer() {
             sx={{
               padding: "0 !important",
               backgroundColor: "#FFFFFF",
-              width: "calc((419/1440) * 100vw)",
-              height: "52px",
+              width: "23.269rem",
+              height: "2.888rem",
             }}
           >
             <InputBase
               sx={{
                 width: "100%",
                 height: "100%",
-                paddingLeft: "calc((18/1440) * 100vw)",
+                paddingLeft: "0.999rem",
                 fontFamily: "Poppins",
                 fontStyle: "normal",
                 fontWeight: "500",
-                fontSize: "14px",
-                lineHeight: "21px",
+                fontSize: "0.777rem",
+                lineHeight: "1.188rem",
                 color: "#3BD27B",
                 opacity: "1",
               }}
@@ -254,8 +266,8 @@ export default function Footer() {
             item
             sx={{
               padding: "0 !important",
-              width: "calc((126/1440) * 100vw)",
-              height: "52px",
+              width: "6.998rem",
+              height: "2.888rem",
             }}
           >
             <Button
@@ -265,8 +277,8 @@ export default function Footer() {
                 fontFamily: "Poppins",
                 fontStyle: "normal",
                 fontWeight: "400",
-                fontSize: "14px",
-                lineHeight: "21px",
+                fontSize: "0.777rem",
+                lineHeight: "1.188rem",
                 width: "100%",
                 height: "100%",
                 backgroundColor: "#0AC75ACC",
