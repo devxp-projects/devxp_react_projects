@@ -24,7 +24,7 @@ export default function MeetOurInstructors() {
     >
       <Box
         sx={{
-          width: "68.611rem",
+          width: "68.75rem",
           height: "26.85rem",
           mx: "auto",
         }}
