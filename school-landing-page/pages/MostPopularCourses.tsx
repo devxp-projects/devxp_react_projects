@@ -11,15 +11,19 @@ import Grid from '@mui/material/Grid';
 
 
 
+
 const MostPopularCourses = () => {
   return (
-    <Container>
-      <Grid container justifyContent="space-between">
+    <Container sx={{overflowX: "hidden"}}>
+      <Grid container justifyContent="space-between" sx={{width: "100%", marginBottom: "10px"}}>
         <Grid item>
           <Typography>Most Popular Courses</Typography>
         </Grid>
         <Grid item>
-          <button>Sort by</button>
+        <Button variant="contained" color="success" startIcon={ <img
+              src={`../src/assets/images/arrow.png`}
+              alt="menu"
+            />} size="small">Sort by</Button>
         </Grid>
       </Grid>
       
@@ -29,9 +33,13 @@ const MostPopularCourses = () => {
   justifyContent="space-between"
   alignItems="center"
   spacing={2}
+  sx={{
+    width: "100%",
+    overflowX: "hidden"
+  }}
 >
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -54,8 +62,8 @@ const MostPopularCourses = () => {
     </Card>
     
   </Grid>
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -63,11 +71,11 @@ const MostPopularCourses = () => {
         height="215px"
         
 
-        image="../src/assets/images/frame1.png"
+        image="../src/assets/images/frame2.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: "Poppins"}}>
-        Learn Marketing from Top Instructors.
+        Front-end development is not hard as you think
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -81,17 +89,17 @@ const MostPopularCourses = () => {
     </Card>
     
   </Grid>
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="215px"
-        image="../src/assets/images/frame1.png"
+        image="../src/assets/images/frame3.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: "Poppins"}}>
-        Learn Marketing from Top Instructors.
+        Everrything you need to know in UX
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -105,17 +113,17 @@ const MostPopularCourses = () => {
     </Card>
     
   </Grid>
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="215px"
-        image="../src/assets/images/frame1.png"
+        image="../src/assets/images/frame4.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: "Poppins"}}>
-        Learn Marketing from Top Instructors.
+        Learn photography with ease
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -129,18 +137,18 @@ const MostPopularCourses = () => {
     </Card>
     
   </Grid>
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="215px"
         
-        image="../src/assets/images/frame1.png"
+        image="../src/assets/images/frame5.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: "Poppins"}}>
-        Learn Marketing from Top Instructors.
+        Be a pro in data analysis
         </Typography>
         <Typography variant="body2" color="text.secondary">
           Lizards are a widespread group of squamate reptiles, with over 6,000
@@ -154,28 +162,30 @@ const MostPopularCourses = () => {
     </Card>
     
   </Grid>
-  <Grid item xs={4} sm={6} md={4}>
-    <Card>
+  <Grid item xs={12} sm={6} md={4}>
+    <Card sx={{maxWidth: "391px"}}>
       <CardMedia
         component="img"
         alt="green iguana"
         height="215px"
               
-        image="../src/assets/images/frame1.png"
+        image="../src/assets/images/frame6.png"
       />
       <CardContent>
-        <Typography gutterBottom variant="h6" component="div" sx={{fontFamily: "Poppins"}}>
-        Learn Marketing from Top Instructors.
+        <Box sx={{display: "flex"}}>
+        <Typography gutterBottom variant="body2" component="h6" sx={{fontFamily: "Poppins", fontWeight: 600}}>
+        Ethical Harking is not hard as you think 
         </Typography>
+        <Box  sx={{marginRight: "5px"}}><img src={`../src/assets/images/star.png`} alt="Rating"></img></Box>
+        <Typography>4.5</Typography>
+        </Box>
+        <Box sx={{display: "flex"}}>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          
         </Typography>
+        </Box>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+      
     </Card>
     
   </Grid>

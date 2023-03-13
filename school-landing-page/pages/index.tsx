@@ -6,7 +6,7 @@ import MostPopularCourses from "./MostPopularCourses"
 
 export default function Index() {
   return (
-    <Box sx={{ width: "80rem" }}>
+    <Box sx={{ width: "100%", overflowX: "hidden" }}>
       <MostPopularCourses />
       <Reviews />
 
