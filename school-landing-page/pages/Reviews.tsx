@@ -37,7 +37,7 @@ export default function Reviews() {
   return (
     <Box
       sx={{
-        width: "68.862rem",
+        width: "68.75rem",
         height: "27.989rem",
         marginBottom: "4.498rem",
         mx: "auto",
