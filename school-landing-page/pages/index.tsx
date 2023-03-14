@@ -7,7 +7,7 @@ import WBTGETL from "./WBTGETL";
 
 export default function Index() {
   return (
-    <Box sx={{ width: "80rem" }}>
+    <Box sx={{ width: "100%" }}>
       <Navbar />
 
       <WBTGETL />
