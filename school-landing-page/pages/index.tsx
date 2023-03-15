@@ -9,8 +9,9 @@ import MostPopularCourses from "./MostPopularCourses"
 export default function Index() {
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
-      <WBTGETL />
       <MostPopularCourses />
+      <WBTGETL />
+      
   
       <Reviews />
 
