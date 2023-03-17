@@ -3,15 +3,18 @@ import MeetOurInstructors from "./MeetOurInstructors";
 import { Box } from "@mui/material";
 import Reviews from "./Reviews";
 import WBTGETL from "./WBTGETL";
-
-import MostPopularCourses from "./MostPopularCourses"
+import LANSITH from "./LANSITH";
+import MostPopularCourses from "./MostPopularCourses";
 
 export default function Index() {
   return (
-    <Box sx={{ width: "100%", overflowX: "hidden" }}>
+    <Box sx={{ width: "80rem" }}>
+      <LANSITH />
+
       <WBTGETL />
+
       <MostPopularCourses />
-  
+
       <Reviews />
 
       <MeetOurInstructors />
