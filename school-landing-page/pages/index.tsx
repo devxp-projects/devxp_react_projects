@@ -3,8 +3,8 @@ import MeetOurInstructors from "./MeetOurInstructors";
 import { Box } from "@mui/material";
 import Reviews from "./Reviews";
 import WBTGETL from "./WBTGETL";
-
-import MostPopularCourses from "./MostPopularCourses"
+import LANSITH from "./LANSITH";
+import MostPopularCourses from "./MostPopularCourses";
 
 export default function Index() {
   return (
@@ -13,6 +13,7 @@ export default function Index() {
       <WBTGETL />
       
   
+
       <Reviews />
 
       <MeetOurInstructors />
