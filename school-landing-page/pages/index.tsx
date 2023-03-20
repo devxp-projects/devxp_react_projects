@@ -5,14 +5,18 @@ import Reviews from "./Reviews";
 import WBTGETL from "./WBTGETL";
 import LANSITH from "./LANSITH";
 import MostPopularCourses from "./MostPopularCourses";
+import TopCategories from "./TopCategories";
 
 export default function Index() {
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
+      <TopCategories />
+    
       <MostPopularCourses />
-      <WBTGETL />
       
-  
+      <LANSITH />
+      
+      <WBTGETL />
 
       <Reviews />
 
