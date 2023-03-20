@@ -9,13 +9,13 @@ import TopCategories from "./TopCategories";
 
 export default function Index() {
   return (
-    <Box sx={{ width: "80rem" }}>
+    <Box sx={{ width: "100%", overflowX: "hidden" }}>
       <TopCategories />
-
+    
       <MostPopularCourses />
-
+      
       <LANSITH />
-
+      
       <WBTGETL />
 
       <Reviews />
