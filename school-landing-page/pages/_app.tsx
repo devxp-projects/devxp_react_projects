@@ -18,7 +18,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
           rel="stylesheet"
         />
       </Head>
-      <main>
+      <main className="app">
         <Component {...pageProps} />
       </main>
     </>
