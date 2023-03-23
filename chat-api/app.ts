@@ -3,7 +3,6 @@ const server  = http.createServer((req, res) => {
     if(req.url === '/'){
     console.log("Request for " + req.url);
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    console.log('Hello World');
     res.end("Hello World");
 }else{
     console.log("Error");
@@ -12,3 +11,4 @@ const server  = http.createServer((req, res) => {
 server.listen(5000, () => {
     console.log("Server running at http://localhost:5000/")
     })
+
