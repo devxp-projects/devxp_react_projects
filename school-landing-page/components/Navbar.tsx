@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
 
             <Box sx={{flexGrow: 1}}>
-                <AppBar position="static" color="transparent" >
+                <AppBar position="static" color="transparent" sx={{boxShadow: 'none'}} >
                     <Toolbar sx={{display: 'flex',
                                 justifyContent: 'space-between',
                                 margin: '0 0 0 4.8rem',
