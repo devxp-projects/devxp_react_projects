@@ -1,51 +1,10 @@
 import React from "react";
-import { AppBar, Box, Button, Link, IconButton, Stack, Toolbar, Tooltip, Hidden } from "@mui/material"
-import { createTheme, styled} from '@mui/material/styles';
+import { AppBar, Box, Button, Link, IconButton, Stack, Toolbar, Tooltip } from "@mui/material"
 import SearchIcon from '@mui/icons-material/Search';
 import Logo from '../public/vectors/logo.jsx';
+import AnimatedLink from "../components/AnimatedComponent";
  
 
-
-const AnimatedLink = styled(Link)(({ theme }) => ({
-    color: theme.palette.primary.main,
-    transition: 'all 0.3s ease-in-out',
-    textDecoration: 'none',
-    '& > Link:last-child': {
-        display: 'hidden'
-    },
-    '&:hover': {
-      transform: 'translateY(-20px)',
-      fontWeight: 'bold',
-      '& > Link': {
-        opacity: 0,
-        display: 'hidden',
-        transform: 'rotate(180deg)',
-        transition: 'all 0.3s ease-in-out',
-      },
-      '& > Link:last-child': {
-        opacity: 1,
-        transform: 'rotate(180deg)',
-        transition: 'all 0.3s ease-in-out',
-      },
-    },
-  }));
-  
-
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: "#09B451",
-        },
-        secondary: {
-            main: '#6A0000',
-        },
-    },
-    typography: {
-        fontSize: 16,
-        fontFamily: 'Source Open Sans, Open Sans',
-    },
-    spacing: [2, 4, 8, 12, 16],
-});
 
 
 const Navbar = () => {
@@ -66,14 +25,12 @@ const Navbar = () => {
                                                                 fontFamily: 'open sans',
                                                                 '& a': navColor 
                                                             }}>
-                            <AnimatedLink href="#">
-                                <Link underline="none" >Home</Link>
-                                <Link underline="none" >Home</Link>
-                            </AnimatedLink>
-                            <Link href="#" underline="none" >Courses</Link>
-                            <Link href="#" underline="none" >Instructors</Link>
-                            <Link href="#" underline="none" >Schedules</Link>
-                            <Link href="#" underline="none" >Contact Us</Link>
+                            <AnimatedLink href="#" name="Home" />
+                            <AnimatedLink href="#" name="Courses" />
+                            <AnimatedLink href="#" name="Instructors" />
+                            <AnimatedLink href="#" name="Schedules" />
+                            <AnimatedLink href="#" name="Contact Us" />
+                                
                         </Stack>
                         <Stack direction="row" spacing={1} sx={{fontFamily: 'Source Sans Pro'}}>
                             <Tooltip title="search">

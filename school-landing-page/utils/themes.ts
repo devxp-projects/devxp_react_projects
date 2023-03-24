@@ -36,6 +36,13 @@ const theme = (mode: "light" | "dark") =>
           },
         },
       },
+      MuiLink: {
+        styleOverrides: {
+          root: {
+            textDecoration: 'none'
+          }
+        }
+      }
     },
   });
 
