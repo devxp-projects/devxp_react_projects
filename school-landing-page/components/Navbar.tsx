@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Button, Link, IconButton, Stack, Toolbar, Tooltip } from "@mui/material"
+import { AppBar, Box, Button, Link, IconButton, Stack, Toolbar, Tooltip, Hidden } from "@mui/material"
 import { createTheme, styled} from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import Logo from '../public/vectors/logo.jsx';
@@ -9,15 +9,20 @@ import Logo from '../public/vectors/logo.jsx';
 const AnimatedLink = styled(Link)(({ theme }) => ({
     color: theme.palette.primary.main,
     transition: 'all 0.3s ease-in-out',
+    textDecoration: 'none',
+    '& > Link:last-child': {
+        display: 'hidden'
+    },
     '&:hover': {
       transform: 'translateY(-20px)',
       fontWeight: 'bold',
-      '& > span': {
+      '& > Link': {
         opacity: 0,
+        display: 'hidden',
         transform: 'rotate(180deg)',
         transition: 'all 0.3s ease-in-out',
       },
-      '& > span:last-child': {
+      '& > Link:last-child': {
         opacity: 1,
         transform: 'rotate(180deg)',
         transition: 'all 0.3s ease-in-out',
@@ -52,7 +57,8 @@ const Navbar = () => {
                     <Toolbar sx={{display: 'flex',
                                 justifyContent: 'space-between',
                                 margin: '0 0 0 4.8rem',
-                                flexWrap: 'wrap' }}>
+                                flexWrap: 'wrap'
+                             }}>
                         <Stack>
                             <Logo />
                         </Stack>
@@ -60,7 +66,10 @@ const Navbar = () => {
                                                                 fontFamily: 'open sans',
                                                                 '& a': navColor 
                                                             }}>
-                            <Link href="#" underline="none" >Home</Link>
+                            <AnimatedLink href="#">
+                                <Link underline="none" >Home</Link>
+                                <Link underline="none" >Home</Link>
+                            </AnimatedLink>
                             <Link href="#" underline="none" >Courses</Link>
                             <Link href="#" underline="none" >Instructors</Link>
                             <Link href="#" underline="none" >Schedules</Link>
