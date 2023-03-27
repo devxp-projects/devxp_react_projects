@@ -6,10 +6,15 @@ import WBTGETL from "./WBTGETL";
 import LANSITH from "./LANSITH";
 import MostPopularCourses from "./MostPopularCourses";
 import TopCategories from "./TopCategories";
+import NavBar from "./NavBar";
+import HeroSection from "./HeroSection";
 
 export default function Index() {
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
+      <NavBar />
+      <HeroSection />
+        
       <TopCategories />
     
       <MostPopularCourses />
