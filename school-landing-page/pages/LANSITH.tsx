@@ -4,7 +4,7 @@ import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 
 const paper = [
   {
-    img: "../src/assets/images/card1.jpeg",
+    img: "../src/assets/images/skill1.jpeg",
     title: "All you need in Business Strategy",
     rating: "4.5",
     duration: "6 weeks",
@@ -12,7 +12,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card2.jpeg",
+    img: "../src/assets/images/skill2.jpeg",
     title: "The amazing hack in Figma prototyping",
     rating: "4.5",
     duration: "6 weeks",
@@ -20,7 +20,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card3.jpeg",
+    img: "../src/assets/images/skill3.jpeg",
     title: "Introduction to basic game developement",
     rating: "4.5",
     duration: "6 weeks",
@@ -28,7 +28,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card4.jpeg",
+    img: "../src/assets/images/skill4.jpeg",
     title: "Use surveyMonkey to create a survey",
     rating: "4.5",
     duration: "6 weeks",
@@ -36,7 +36,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card5.jpeg",
+    img: "../src/assets/images/skill5.jpeg",
     title: "Introduction to front-end development",
     rating: "4.5",
     duration: "6 weeks",
@@ -44,7 +44,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card6.jpeg",
+    img: "../src/assets/images/skill6.jpeg",
     title: "Get started with First aid ",
     rating: "4.5",
     duration: "6 weeks",
@@ -52,7 +52,7 @@ const paper = [
     price: "30.5$",
   },
   {
-    img: "../src/assets/images/card7.jpeg",
+    img: "../src/assets/images/skill7.jpeg",
     title: "Everything you need to know in UX",
     rating: "4.5",
     duration: "6 weeks",

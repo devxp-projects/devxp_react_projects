@@ -32,6 +32,7 @@ export default function Footer() {
         height: "32.598rem",
         width: "80rem",
         backgroundColor: "#000000",
+        mx: "auto",
       }}
     >
       <Grid
