@@ -1,8 +1,12 @@
+import { ThemeProvider, createTheme } from "@mui/material";
 import { AppProps } from "next/app";
 import Head from "next/head";
+import { useRef } from "react";
+import theme from "school-landing-page/utils/themes";
 import "./styles.css";
 
 function CustomApp({ Component, pageProps }: AppProps) {
+  const _theme = useRef(theme("light"))
   return (
     <>
       <Head>
@@ -19,7 +23,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        <ThemeProvider theme={_theme.current}>
+          <Component {...pageProps} />
+        </ThemeProvider>
       </main>
     </>
   );
