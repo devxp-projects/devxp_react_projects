@@ -13,7 +13,7 @@ export default function Index() {
   return (
 
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
-      <Navbar />
+      
       <HeroSection /> 
       
       <TopCategories />
