@@ -20,6 +20,7 @@ export default function MeetOurInstructors() {
         width: "80rem",
         backgroundColor: "#FFFFFF",
         marginBottom: "4.497rem",
+        mx: "auto",
       }}
     >
       <Box

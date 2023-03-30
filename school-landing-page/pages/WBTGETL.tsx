@@ -31,7 +31,7 @@ export default function WBTGETL() {
         <Grid item sx={{ width: "23.879rem", height: "25.625rem" }}>
           <Box
             sx={{
-              overflow: "auto",
+              overflow: "hidden",
               width: "21.769rem",
               height: "25.625rem",
               background: "#CECECE",
