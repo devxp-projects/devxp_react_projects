@@ -1,7 +1,7 @@
 {
-  "name": "ch4",
+  "name": "ch5",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "./ch4/src",
+  "sourceRoot": "./ch5/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -11,7 +11,7 @@
       ],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/ch4"
+        "outputPath": "dist/ch5"
       },
       "configurations": {
         "development": {
@@ -26,15 +26,15 @@
       "executor": "@nrwl/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "ch4:build"
+        "buildTarget": "ch5:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "ch4:build:development",
+          "buildTarget": "ch5:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "ch4:build:production",
+          "buildTarget": "ch5:build:production",
           "hmr": false
         }
       }
@@ -43,25 +43,25 @@
       "executor": "@nrwl/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "ch4:build"
+        "buildTarget": "ch5:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "ch4:build:development"
+          "buildTarget": "ch5:build:development"
         },
         "production": {
-          "buildTarget": "ch4:build:production"
+          "buildTarget": "ch5:build:production"
         }
       }
     },
     "test": {
       "executor": "@nrwl/vite:test",
       "outputs": [
-        "coverage/ch4"
+        "coverage/ch5"
       ],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../coverage/ch4"
+        "reportsDirectory": "../coverage/ch5"
       }
     },
     "lint": {
@@ -71,7 +71,7 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "./ch4/**/*.{ts,tsx,js,jsx}"
+          "./ch5/**/*.{ts,tsx,js,jsx}"
         ]
       }
     }

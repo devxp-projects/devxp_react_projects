@@ -12,7 +12,7 @@ it('should render successfully', () => {
 
 it('should have a greeting as the title', () => {
   const { getByText } = render(<App />);
-  expect(getByText(/Welcome ch4/gi)).toBeTruthy();
+  expect(getByText(/Welcome ch5/gi)).toBeTruthy();
 });
 
 });

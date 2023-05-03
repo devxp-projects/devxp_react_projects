@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "nx serve food-hut",
+    "dev": "nx serve ch5",
     "build": "nx build food-hut",
     "start": "nx serve food-hut --prod",
     "lint": "nx lint food-hut",
     "test": "jest --watch",
-    "ch3-web": "nx serve school-landing-page",
-    "ch3-api": "nx serve chat-api"
+    "ch5": "nx serve ch5"
   },
   "keywords": [],
   "author": "",
