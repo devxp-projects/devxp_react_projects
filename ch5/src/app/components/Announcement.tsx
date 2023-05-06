@@ -5,8 +5,9 @@ import { Column, Row } from "./Flex"
 import { H1, H4, Text } from "./Typography"
 
 export const Announcement = () => {
+    const tabSize = 4;
     const [start, setStart] = useState(0);
-    const [end, setEnd] = useState(4);
+    const [end, setEnd] = useState(tabSize);
     const data = Dummy.slice(start, end);
 
     const handleNext = () => {
@@ -21,8 +22,8 @@ export const Announcement = () => {
         if (start === 0) {
             return;
         }
-        setStart(start - 4);
-        setEnd(end - 4);
+        setStart(start - tabSize);
+        setEnd(end - tabSize);
     };
 
     return (
