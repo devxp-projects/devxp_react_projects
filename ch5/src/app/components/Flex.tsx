@@ -7,7 +7,8 @@ export const Flex = styled.div<FlexProps>`
     align-items: ${(props) => props.alignItems || 'normal'};
     gap: ${(props) => props.gap || 0}rem;
     padding: ${(props) => props.padding || 0}rem;
-    border-bottom: ${(props) => props.borderBottom || 'none'}
+    border-bottom: ${(props) => props.borderBottom || 'none'};
+    width: ${(props) => props.width || 'auto'};
 `
 export const Row = styled(Flex)`
     flex-direction: row;

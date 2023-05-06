@@ -12,12 +12,13 @@ export type FlexProps = {
     gap?: number
     padding?: number
     borderBottom?: string
+    width?: string
 }
 
 export type TypographyProps = {
     fontName?: string
     fontSize?: number
-    fontWeight?: string
+    fontWeight?: number
     textAlign?: string
     overFlow?: string
     color?: string

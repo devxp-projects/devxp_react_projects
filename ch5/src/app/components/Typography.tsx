@@ -3,7 +3,7 @@ import { TypographyProps } from "../types/components.types";
 import { Fonts, Colors } from "../configs/app";
 
 export const Text = styled.p<TypographyProps>`
-    Fonts-family: ${(props) => props.fontName || 'Roboto'};
+    font-family: ${(props) => props.fontName || 'Roboto'};
     font-size: ${(props) => props.fontSize || Fonts.size.base}rem;
     font-weight: ${(props) => props.fontWeight || 600};
     line-height: 1.25rem;
