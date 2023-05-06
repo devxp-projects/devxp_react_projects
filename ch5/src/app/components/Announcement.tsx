@@ -44,7 +44,7 @@ export const Announcement = () => {
                 )
             })}
             <Row alignItems="center" justifyContent="space-between" padding={2} borderBottom="1px solid #DBDADE" >
-                <Text fontWeight={400} color="#979797" >Showing {start + 1} to {(data.length < 4) ? start + data.length : end} of {Dummy.length} </Text>
+                <Text fontWeight={400} color="#979797" >Showing {start + 1} to {(data.length < tabSize) ? start + data.length : end} of {Dummy.length} </Text>
                 <Row alignItems="center" gap={0.75} >
                     <img src={Icons.previous} alt="previous icon" onClick={handlePrevious} ></img>
                     <img src={Icons.next} alt="next icon" onClick={handleNext}></img>
