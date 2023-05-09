@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
 import Logo from '../assets/logo.png';
+import sideNavToggle from '../assets/icons/sideNavToggle.svg';
 const Sidebar = () => {
   return (
     <Box
@@ -22,8 +23,17 @@ const Sidebar = () => {
           justifyContent: 'space-between',
           alignItems: 'center',
           padding: '0px 20px',
+          gap: '16px',
         }}
       >
+        <Box
+          component="img"
+          sx={{
+            width: '24px',
+          }}
+          alt="Logo"
+          src={sideNavToggle}
+        />
         <Box
           component="img"
           sx={{
