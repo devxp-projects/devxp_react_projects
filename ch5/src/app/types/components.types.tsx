@@ -24,3 +24,15 @@ export type TypographyProps = {
     color?: string
     margin?: number
 }
+
+export type InputProps = {
+    placeholder: string
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void
+}
+
+export type DummyDataProps = {
+    date: string
+    title: string
+    description: string
+    id: number
+}[]
