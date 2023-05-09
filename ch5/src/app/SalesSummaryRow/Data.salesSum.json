@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Sales Summary",
+      "price": 3,
+      "chart": "lineChart",
+      "percent": 2.1,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "title": "Order Volume",
+      "price": 5.51,
+      "chart": "BarChart",
+      "percent": 2.1,
+      "color": "#37cb79"
+    }
+  ]
+}
