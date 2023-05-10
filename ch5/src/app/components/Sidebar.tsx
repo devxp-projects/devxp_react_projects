@@ -79,6 +79,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
               height: '14px',
               width: '14px',
               fontSize: '12px',
+              marginLeft: openSidebar ? '0px' : '-8px',
             }}
           >
             {notification}
@@ -173,9 +174,11 @@ const Sidebar: React.FC<SidebarProps> = ({ openSidebar, setOpenSidebar }) => {
           component="img"
           sx={{
             width: '24px',
+            cursor: 'pointer',
           }}
           alt="Logo"
           src={SideNavToggleIcon}
+          onClick={() => setOpenSidebar(!openSidebar)}
         />
         {openSidebar && (
           <Box
