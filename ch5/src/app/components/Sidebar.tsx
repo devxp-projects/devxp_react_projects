@@ -1,9 +1,18 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import Logo from '../assets/logo.png';
-import sideNavToggle from '../assets/icons/sideNavToggle.svg';
-import overviewIcon from '../assets/icons/overview.svg';
-import cheronRight from '../assets/icons/cheronRight.svg';
+import {
+  HelpIcon,
+  OverviewIcon,
+  CheronRightIcon,
+  Logo,
+  SideNavToggleIcon,
+  ProductIcon,
+  ReportIcon,
+  OrderIcon,
+  SettingIcon,
+  UserIcon,
+  ToolIcon,
+} from '../assets';
 
 interface SidebarItemProps {
   icon: string;
@@ -73,7 +82,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             {notification}
           </Typography>
         )}
-        <Box component="img" src={cheronRight} />
+        <Box component="img" src={CheronRightIcon} />
       </Box>
     </Box>
   );
@@ -81,50 +90,50 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
 const Sidebar = () => {
   const navItems = [
     {
-      icon: overviewIcon,
+      icon: OverviewIcon,
       label: 'Overview',
       path: '/',
       isActive: true,
     },
     {
-      icon: overviewIcon,
+      icon: ProductIcon,
       label: 'Products',
       path: '/',
       isActive: false,
     },
     {
-      icon: overviewIcon,
+      icon: OrderIcon,
       label: 'Orders',
       path: '/',
       isActive: false,
       notification: 20,
     },
     {
-      icon: overviewIcon,
+      icon: ReportIcon,
       label: 'Reports',
       path: '/',
       isActive: false,
     },
     {
-      icon: overviewIcon,
+      icon: SettingIcon,
       label: 'Settings',
       path: '/',
       isActive: false,
     },
     {
-      icon: overviewIcon,
+      icon: UserIcon,
       label: 'Administration',
       path: '/',
       isActive: false,
     },
     {
-      icon: overviewIcon,
+      icon: ToolIcon,
       label: 'Maintenance',
       path: '/',
       isActive: false,
     },
     {
-      icon: overviewIcon,
+      icon: HelpIcon,
       label: 'Help',
       path: '/',
       isActive: false,
@@ -159,7 +168,7 @@ const Sidebar = () => {
             width: '24px',
           }}
           alt="Logo"
-          src={sideNavToggle}
+          src={SideNavToggleIcon}
         />
         <Box
           component="img"
