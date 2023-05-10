@@ -20,6 +20,7 @@ interface SidebarItemProps {
   path: string;
   isActive: boolean;
   notification?: number;
+  openSidebar: boolean;
 }
 
 const SidebarItem: React.FC<SidebarItemProps> = ({
@@ -28,6 +29,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
   path,
   isActive,
   notification,
+  openSidebar,
 }) => {
   return (
     <Box
@@ -36,7 +38,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '15px 30px',
+        padding: '15px 25px',
         cursor: 'pointer',
         borderLeft: isActive ? '3px solid #ffffff' : '3px solid #363740',
         background: isActive ? '#DBDADE08' : '#363740',
@@ -52,7 +54,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
         }}
       >
         <Box component="img" src={icon} />
-        <Typography>{label}</Typography>
+        {openSidebar && <Typography>{label}</Typography>}
       </Box>
 
       <Box
@@ -82,12 +84,17 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
             {notification}
           </Typography>
         )}
-        <Box component="img" src={CheronRightIcon} />
+        {openSidebar && <Box component="img" src={CheronRightIcon} />}
       </Box>
     </Box>
   );
 };
-const Sidebar = () => {
+
+interface SidebarProps {
+  openSidebar: boolean;
+  setOpenSidebar: (value: boolean) => void;
+}
+const Sidebar: React.FC<SidebarProps> = ({ openSidebar, setOpenSidebar }) => {
   const navItems = [
     {
       icon: OverviewIcon,
@@ -143,7 +150,7 @@ const Sidebar = () => {
     <Box
       sx={{
         height: '100vh',
-        width: 255,
+        width: openSidebar ? '255px' : '75px',
         backgroundColor: '#363740',
         display: 'flex',
         flexDirection: 'column',
@@ -170,14 +177,16 @@ const Sidebar = () => {
           alt="Logo"
           src={SideNavToggleIcon}
         />
-        <Box
-          component="img"
-          sx={{
-            width: '100%',
-          }}
-          alt="Logo"
-          src={Logo}
-        />
+        {openSidebar && (
+          <Box
+            component="img"
+            sx={{
+              width: '100%',
+            }}
+            alt="Logo"
+            src={Logo}
+          />
+        )}
       </Box>
 
       {/* Sidebar Navs */}
@@ -196,6 +205,7 @@ const Sidebar = () => {
             path={item.path}
             isActive={item.isActive}
             notification={item?.notification}
+            openSidebar={openSidebar}
           />
         ))}
       </Box>
