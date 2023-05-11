@@ -4,16 +4,40 @@ import salesData from "./Data.salesSum.json";
 import arrDownBtn from "../../assets/chevron-down.svg";
 import arrDown from "../../assets/Arrow Down.svg";
 import arrUp from "../../assets/Arrow Up.svg";
-import LineChart, { iLineChart } from "./LineChart";
+import LineChart, { iChart } from "./LineChart";
+import BarChart from "./BarChart";
 
-const chartData: iLineChart = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+const chartData: iChart = {
+  labels: [1, 2, 3, 4, 5, 6],
   datasets: [
     {
-      label: "Sales",
-      data: [10, 20, 15, 25, 30, 35, 40],
+      label: "This Week",
+      data: [15, 10, 30, 20, 15, 35],
       fill: false,
-      borderColor: "rgb(75, 192, 192)",
+      borderColor: "rgb(115, 103, 240, 1)", //7367f0
+    },
+    {
+      label: "Last Week",
+      data: [20, 40, 15, 35, 20, 25],
+      fill: false,
+      borderColor: "rgba(225, 230, 0,1)", //ffe800
+    },
+  ],
+};
+const BarchartData: iChart = {
+  labels: [1, 2, 3, 4, 5, 6],
+  datasets: [
+    {
+      label: "This Week",
+      data: [15, 10, 30, 20, 15, 35],
+      fill: false,
+      backgroundColor: "rgb(115, 103, 240, 1)",
+    },
+    {
+      label: "Last Week",
+      data: [20, 40, 15, 35, 20, 25],
+      fill: false,
+      backgroundColor: "rgba(225, 230, 0,1)",
     },
   ],
 };
@@ -45,7 +69,11 @@ const SalesSummaryRow = () => {
             </div>
             {/* chart */}
             <div className="s-chart">
-              <LineChart data={chartData} />
+              {obj.chart === "lineChart" ? (
+                <LineChart data={chartData} />
+              ) : (
+                <BarChart data={BarchartData} />
+              )}
             </div>
           </div>
         );

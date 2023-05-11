@@ -1,38 +1,29 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-
 import { Chart, registerables } from "chart.js";
 Chart.register(...registerables);
 
-export interface iLineChart {
-  labels: string[];
+export interface iChart {
+  labels: number[];
   datasets: {
     label: string;
     data: number[];
     fill: boolean;
-    borderColor: string;
+    borderColor?: string;
+    backgroundColor?: string;
   }[];
 }
-interface LineChartProp {
-  data: iLineChart;
+export interface ChartInterface {
+  data: iChart;
 }
 
-const LineChart: React.FC<LineChartProp> = ({ data }) => {
+const LineChart: React.FC<ChartInterface> = ({ data }) => {
   return (
     <div>
       <Line
         data={data}
         options={{
           responsive: true,
-          plugins: {
-            legend: {
-              position: "top" as const,
-            },
-            title: {
-              display: true,
-              text: "Chart.js Line Chart",
-            },
-          },
           scales: {
             y: {
               beginAtZero: true,
