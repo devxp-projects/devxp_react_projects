@@ -18,4 +18,4 @@ Each app is run by running yarn plus the name of your cohort, - the environment.
     or
     yarn ch3-api 
 ```
-The API is for Nodejs.
+We use [MUI](https://mui.com/) for UI. And only when absolutely very neccessary should another UI library or CSS be used directly. MUI has all the component you need
