@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Box } from '@mui/material';
 import Sidebar from './Sidebar';
+import { Announcement } from './Announcement';
 const Layout = () => {
   const [openSidebar, setOpenSidebar] = useState(true);
   return (
@@ -8,10 +9,18 @@ const Layout = () => {
       {/* Sidebar */}
       <Sidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
       {/* Content Area */}
-      <Box>
+      <Box
+        sx={{
+          backgroundColor: '#DBDADE',
+          height: '100vh',
+          flexGrow: 1,
+          padding: '10px 20px',
+        }}
+      >
         {/* Navigation bar */}
 
-        {/* Maain */}
+        {/* Main */}
+        <Announcement />
       </Box>
     </Box>
   );
