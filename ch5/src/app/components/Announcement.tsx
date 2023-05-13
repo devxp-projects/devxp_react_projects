@@ -44,7 +44,7 @@ const Announcement = () => {
     };
 
     return (
-        <Container maxWidth={false} disableGutters sx={{ borderRadius: "0.5rem" }}>
+        <Container maxWidth={false} disableGutters sx={{ borderRadius: "0.5rem", background: "#FFFFFF"}}>
             <Grid container spacing={2} sx={{ padding: '1rem', gap: { xs: "1rem", sm: '2rem' }, borderBottom: "1px solid #DBDADE", alignItems: { xs: "stretch", sm: "center" }, justifyContent: "space-between", flexDirection: { xs: "column", sm: "row" } }} >
                 <Grid>
                     <Typography variant="h1">Announcements</Typography>
