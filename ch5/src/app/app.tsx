@@ -13,9 +13,6 @@ export function App() {
       {/* <NxWelcome title="ch5" /> */}
       {/* <div /> */}
       <Layout />
-      <ThemeProvider theme={theme} >
-        <Announcement />
-      </ThemeProvider >
     </>
   );
 }

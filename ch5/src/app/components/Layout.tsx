@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, ThemeProvider } from '@mui/material';
 import Sidebar from './Sidebar';
-import { Announcement } from './Announcement';
+import Announcement  from './Announcement';
+import { theme } from '../themes';
 const Layout = () => {
   const [openSidebar, setOpenSidebar] = useState(true);
   return (
@@ -20,7 +21,9 @@ const Layout = () => {
         {/* Navigation bar */}
 
         {/* Main */}
-        <Announcement />
+        <ThemeProvider theme={theme} >
+          <Announcement />
+        </ThemeProvider >
       </Box>
     </Box>
   );
