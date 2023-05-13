@@ -1,16 +1,20 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // import styles from './app.module.scss';
 // import NxWelcome from "./nx-welcome";
+import { ThemeProvider } from "@mui/material";
 import Announcement from './components/Announcement';
+import { theme } from './themes';
 
 
 export function App() {
-
-    return (
+  
+  return (
     <>
       {/* <NxWelcome title="ch5" /> */}
       {/* <div /> */}
-      <Announcement  />
+      <ThemeProvider theme={theme} >
+        <Announcement />
+      </ThemeProvider >
     </>
   );
 

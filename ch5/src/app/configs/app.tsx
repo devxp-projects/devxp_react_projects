@@ -65,24 +65,3 @@ export const Icons = {
     next: nextIcon,
     hamburger: hamburger
 }
-
-export const Fonts = {
-    size: {
-        base: 0.8125,
-        small: 0.75,
-        large: 1.25,
-    },
-
-    weight: {
-        thin: 100,
-        light: 300,
-        regular: 400,
-        medium: 500,
-        bold: 700,
-        black: 900
-    }
-}
-
-export const Colors = {
-    base: '#000000'
-}

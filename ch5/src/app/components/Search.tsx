@@ -1,8 +1,8 @@
 import { InputProps } from "../types/components.types"
+import { Input } from '@mui/material';
 
-
-export const Search = ({placeholder, onChange} : InputProps) => {
+export const Search = ({ onChange, placeholder, padding, border, borderRadius, width }: InputProps) => {
     return (
-        <input placeholder={placeholder} onChange={(event) => onChange(event)}></input>
+        <Input onChange={(event) => onChange(event)} placeholder={placeholder} sx={{ padding: padding, border: border, borderRadius: `${borderRadius}px`, width: width}} ></Input>
     )
 }
