@@ -3,7 +3,7 @@ import { Icons, announcements } from "../configs/app";
 import { Search } from "./Search";
 import { Container, Grid, Typography } from "@mui/material";
 
-const Announcements = () => {
+const Announcement = () => {
     const tabSize = 4;
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(tabSize);
@@ -89,4 +89,4 @@ const Announcements = () => {
     );
 };
 
-export default Announcements;
+export default Announcement;

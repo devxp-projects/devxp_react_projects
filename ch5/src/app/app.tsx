@@ -4,7 +4,7 @@
 import { ThemeProvider } from "@mui/material";
 import { theme } from './themes';
 import Layout from './components/Layout';
-import Announcements from "./components/Announcement";
+import Announcement from "./components/Announcement";
 
 export function App() {
 
@@ -14,7 +14,7 @@ export function App() {
       {/* <div /> */}
       <Layout />
       <ThemeProvider theme={theme} >
-        <Announcements />
+        <Announcement />
       </ThemeProvider >
     </>
   );
