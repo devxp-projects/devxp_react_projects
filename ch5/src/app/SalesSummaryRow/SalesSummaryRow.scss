@@ -1,0 +1,104 @@
+.superContainer {
+  padding: 5rem;
+  display: flex;
+  gap: 24px;
+  background-color: #ddd;
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+  }
+}
+// actual card style
+.s-Container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 10fr;
+  padding: 10px 20px;
+  height: 328px;
+  width: 363.5px;
+  background: #fff;
+  border-radius: 8px;
+  @media only screen and (max-width: 850px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 5px;
+  }
+
+  .s-titleBox {
+    display: flex;
+    justify-content: space-between;
+    .s-title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #363740;
+      align-items: center;
+      @media only screen and (max-width: 400px) {
+        font-size: 80%;
+      }
+    }
+    .s-btn {
+      font-size: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      border-radius: 2.52486px;
+      gap: 2px;
+      color: #979797;
+      @media only screen and (max-width: 400px) {
+        font-size: 10%;
+      }
+      img {
+        width: 10px;
+      }
+    }
+  }
+  .s-summary {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    .title {
+      font-size: 20px;
+      font-weight: 900;
+      @media only screen and (max-width: 400px) {
+        font-size: 80%;
+      }
+    }
+    .brief {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 10px;
+        height: 10px;
+        @media only screen and (max-width: 400px) {
+          width: 7px;
+          height: 7px;
+        }
+      }
+      .perc {
+        font-size: 12px;
+        @media only screen and (max-width: 400px) {
+          font-size: 8px;
+        }
+      }
+      .txt {
+        font-size: 12px;
+        font-weight: 600;
+        color: #979797;
+        @media only screen and (max-width: 400px) {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  .s-chart {
+    display: grid;
+    margin: auto;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      overflow: scroll;
+    }
+  }
+}
