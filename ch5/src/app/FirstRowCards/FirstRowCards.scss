@@ -5,7 +5,7 @@
   background-color: #ddd;
   @media only screen and (max-width: 850px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, min-content);
     gap: 10%;
     padding: 1rem;
   }
@@ -21,7 +21,7 @@
   background-color: #fff;
   justify-content: space-between;
   @media only screen and (max-width: 850px) {
-    width: 100%;
+    width: 90%;
   }
   @media only screen and (max-width: 500px) {
     padding: 5px;
