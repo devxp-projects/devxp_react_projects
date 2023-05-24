@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Total Pending Orders",
+      "titleNumber": 10,
+      "description": "Today",
+      "chart": "bar",
+      "footerTitle": "Current Daily Order",
+      "footerTitleDesc": "Volume limitation",
+      "footerNumber": 10000
+    },
+    {
+      "id": 2,
+      "title": "Best Selling Product sales Contribution",
+      "titleNumber": 71,
+      "percent": "%",
+      "chart": "doughnut",
+
+      "footerTitle": "Total out of Stock",
+      "footerNumber": 1351,
+
+      "UpperFooterTitle": "Best selling Products",
+      "UpperfooterTitleDesc": "Low Stock Level",
+      "UpperfooterNumber": 1
+    },
+    {
+      "id": 3,
+      "title": "Your Rating",
+      "titleNumber": 1.3,
+      "chart": "pie",
+
+      "footerTitle": "Handling Time With SLA",
+      "footerNumber": 88,
+      "footerTitleDesc": "Very Poor",
+      "footPercent": "%",
+
+      "UpperFooterTitle": "Canceling- Seller Related",
+      "UpperfooterTitleDesc": "Very Poor",
+      "UpperfooterNumber": 6
+    },
+    {
+      "id": 4,
+      "title": "New Product Creation",
+      "titleNumber": 1549,
+      "description": "(Last 14 Days)",
+      "chart": "polar",
+
+      "footerTitle": "Pending",
+      "footerNumber": 227,
+
+      "UpperFooterTitle": "Approved",
+      "UpperfooterNumber": 3928
+    }
+  ]
+}
