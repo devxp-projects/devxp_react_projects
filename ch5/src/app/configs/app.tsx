@@ -2,7 +2,7 @@ import AnnouncementIcon from '../assets/icons/messagebox.svg';
 import nextIcon from '../assets/icons/nextIcon.svg';
 import previousIcon from '../assets/icons/previousIcon.svg';
 import hamburger from '../assets/icons/hamburger.svg'
-import { DummyDataProps } from '../types/components.types';
+import { DummyDataProps } from '../types/app.types';
 
 
 export const announcements: DummyDataProps = [
