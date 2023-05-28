@@ -26,7 +26,7 @@ export const TopNav = () => {
                 <Search
                     placeholder='Search' padding="0 0.5rem"
                     border="1px solid #DBDADE" borderRadius={4}
-                    width={"inherit"} maxWidth="56.8125rem"
+                    width={"inherit"} maxWidth="64rem"
                     onFocus={() => handleSearchResultsBox()}
                     inputRef={ref}
                 />

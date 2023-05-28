@@ -1,3 +1,5 @@
+import React from "react"
+
 export type InputProps = {
     onChange?: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>, id?: string) => void
     onFocus?: (event: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>, id?: string) => void
@@ -11,3 +13,20 @@ export type InputProps = {
     maxWidth?: string
 }
 
+export type CardProps = {
+    title: string
+    date: string
+    voucherDiscount: string
+    deadline: string
+    fundedPortion: string
+    bgImage: string
+    countDown: {
+        days: string,
+        hours: string,
+        minutes: string,
+    },
+    timeBg: string,
+    approved: number,
+    pending: number,
+    rejected: number,
+}
