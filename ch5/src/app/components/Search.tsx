@@ -1,8 +1,15 @@
 import { InputProps } from "../types/components.types"
-import { Input } from '@mui/material';
+import { InputBase } from '@mui/material';
 
-export const Search = ({ onChange, placeholder, padding, border, borderRadius, width }: InputProps) => {
+export const Search = ({ onChange, onFocus, onBlur, placeholder, padding, border, borderRadius, width, maxWidth, inputRef }: InputProps) => {
     return (
-        <Input onChange={(event) => onChange(event)} placeholder={placeholder} sx={{ padding: padding, border: border, borderRadius: `${borderRadius}px`, width: width}} ></Input>
+        <InputBase
+            onChange={(event) => onChange && onChange(event)}
+            onFocus={(event) => onFocus && onFocus(event)}
+            onBlur={(event) => onBlur && onBlur(event)}
+            placeholder={placeholder}
+            inputRef={inputRef}
+            sx={{ padding: padding, border: border, borderRadius: `${borderRadius}px`, width: width, maxWidth: maxWidth }}
+        ></InputBase>
     )
 }

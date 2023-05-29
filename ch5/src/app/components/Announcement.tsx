@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icons, announcements } from "../configs/app";
+import { icons, announcements } from "../configs/app";
 import { Search } from "./Search";
 import { Container, Grid, Typography } from "@mui/material";
 
@@ -47,14 +47,14 @@ const Announcement = () => {
         <Container maxWidth={false} disableGutters sx={{ borderRadius: "0.5rem", background: "#FFFFFF"}}>
             <Grid container spacing={2} sx={{ padding: '1rem', gap: { xs: "1rem", sm: '2rem' }, borderBottom: "1px solid #DBDADE", alignItems: { xs: "stretch", sm: "center" }, justifyContent: "space-between", flexDirection: { xs: "column", sm: "row" } }} >
                 <Grid>
-                    <Typography variant="h1">Announcements</Typography>
+                    <Typography variant="h1" color={"#363740"}>Announcements</Typography>
                 </Grid>
                 <Grid container spacing={2} sx={{ width: { xs: '100%', sm: '50%' }, alignItems: "center", flexDirection: "row !important;" }} >
                     <Grid item sx={{ width: '100%', }}>
                         <Search onChange={handleInputChange} placeholder="Search" padding="0 0.5rem" border="1px solid #DBDADE" borderRadius={4} width={"inherit"} />
                     </Grid>
                     <Grid item>
-                        <img src={Icons.hamburger} alt="hamburger-menu"></img>
+                        <img src={icons.hamburger} alt="hamburger-menu"></img>
                     </Grid>
                 </Grid>
             </Grid>
@@ -66,11 +66,11 @@ const Announcement = () => {
                                 <Typography variant="subtitle1" color={"#DBDADE"}>{update.date}</Typography>
                             </Grid>
                             <Grid item sx={{ width: '100%' }} >
-                                <Typography variant="h4">{update.title}</Typography>
-                                <Typography variant="h4">{update.description}</Typography>
+                                <Typography variant="h4" color={"#363740"}>{update.title}</Typography>
+                                <Typography variant="h4" color={"#363740"}>{update.description}</Typography>
                             </Grid>
                             <Grid item >
-                                <img src={Icons.unread} alt="unread icon"></img>
+                                <img src={icons.unread} alt="unread icon"></img>
                             </Grid>
                         </Grid>
                     )
@@ -81,8 +81,8 @@ const Announcement = () => {
                     <Typography variant="subtitle2" color={"#979797"} >Showing {start + 1} to {(showingAnnouncements.length < tabSize) ? start + showingAnnouncements.length : end} of {announcements.length} </Typography>
                 </Grid>
                 <Grid container item sx={{ alignItems: "center", gap: "0.75rem" }} >
-                    <img src={Icons.previous} alt="previous icon" onClick={handlePrev} style={{ width: "fit-content" }} ></img>
-                    <img src={Icons.next} alt="next icon" onClick={handleNext} style={{ width: "fit-content" }}></img>
+                    <img src={icons.previous} alt="previous icon" onClick={handlePrev} style={{ width: "fit-content" }} ></img>
+                    <img src={icons.next} alt="next icon" onClick={handleNext} style={{ width: "fit-content" }}></img>
                 </Grid>
             </Grid>
         </Container >
