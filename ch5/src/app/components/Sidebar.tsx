@@ -150,7 +150,6 @@ const Sidebar: React.FC<SidebarProps> = ({ openSidebar, setOpenSidebar }) => {
   return (
     <Box
       sx={{
-        height: '100vh',
         width: openSidebar ? '255px' : '75px',
         backgroundColor: '#363740',
         display: 'flex',

@@ -10,6 +10,12 @@ export const theme = createTheme({
                 wordBreak: "break-all"
             },
         },
+        h2: {
+            fontWeight: 700,
+            '@media (max-width:240px)': {
+                wordBreak: "break-all"
+            },
+        },
         h4: {
             fontWeight: 500,
             fontSize: '0.75rem',
@@ -36,7 +42,7 @@ export const theme = createTheme({
         values: {
             xs: 0,
             sm: 429,
-            md: 900,
+            md: 1024,
             lg: 1200,
             xl: 1536,
         },
@@ -67,5 +73,10 @@ export const theme = createTheme({
                 }
             }
         },
+    },
+    palette: {
+        primary: {
+            main: "#4B465C",
+        }
     }
 })

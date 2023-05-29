@@ -6,6 +6,9 @@ import "./app.module.scss";
 // import styles from './app.module.scss';
 // import NxWelcome from "./nx-welcome";
 import Layout from "./components/Layout";
+import "./app.module.scss";
+import Layout from './components/Layout';
+import { ContextProvider } from "./context/Context";
 
 export function App() {
   return (
@@ -14,8 +17,9 @@ export function App() {
       <SalesSummaryRow />
       {/* <NxWelcome title="ch5" /> */}
       {/* <div /> */}
+    <ContextProvider>
       <Layout />
-    </>
+    </ContextProvider>
   );
 }
 
