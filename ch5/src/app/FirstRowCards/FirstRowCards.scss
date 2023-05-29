@@ -1,17 +1,14 @@
 .container {
   display: flex;
   gap: 24px;
-  padding: 5rem;
   background-color: #ddd;
   @media only screen and (max-width: 850px) {
     display: grid;
-    grid-template-columns: repeat(2, min-content);
-    gap: 10%;
-    padding: 1rem;
+    grid-template-columns: repeat(2, 47%);
   }
 }
 .cardWrap {
-  width: 169.75px;
+  width: 15rem;
   // height: 248px;
   padding: 16px;
   border-radius: 8px;

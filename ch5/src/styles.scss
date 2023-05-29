@@ -7,3 +7,74 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.scroll-x {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+        opacity: 0;
+        width: 8px;
+        display: none;
+    }
+
+    /* Show the scrollbar on hover */
+    &:hover::-webkit-scrollbar {
+        opacity: 1;
+        height: 1px;
+        transition: opacity display;
+        display: block;
+    }
+
+    /* Track style */
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    /* Thumb style */
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 4px;
+        opacity: 0;
+    }
+
+    /* Thumb on hover */
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: #555;
+        transition: background-color #555;
+    }
+}
+.scroll-y {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* Hide the scrollbar by default */
+    &::-webkit-scrollbar {
+        opacity: 0;
+        width: 8px;
+        display: none;
+    }
+
+    /* Show the scrollbar on hover */
+    &:hover::-webkit-scrollbar {
+        opacity: 1;
+        transition: opacity display;
+        display: block;
+    }
+
+    /* Track style */
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    /* Thumb style */
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 4px;
+        opacity: 0;
+    }
+
+    /* Thumb on hover */
+    &:hover::-webkit-scrollbar-thumb {
+        background-color: #555;
+        transition: background-color #555;
+    }
+}
