@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  gap: 24px;
+  padding: 5rem;
+  background-color: #ddd;
+  @media only screen and (max-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    gap: 10%;
+    padding: 1rem;
+  }
+}
+.cardWrap {
+  width: 169.75px;
+  // height: 248px;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #fff;
+  justify-content: space-between;
+  @media only screen and (max-width: 850px) {
+    width: 90%;
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 5px;
+  }
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-weight: 800;
+  font-size: 11px;
+  font-family: "Roboto";
+  @media only screen and (max-width: 400px) {
+    font-size: 8px;
+  }
+}
+.titleNumber {
+  font-size: 15px;
+  @media only screen and (max-width: 400px) {
+    font-size: 8px;
+  }
+}
+
+// chart
+.chart {
+  // background-color: aquamarine;
+  @media only screen and (max-width: 400px) {
+    font-size: 8px;
+  }
+}
+// footer
+.footer {
+  font-size: 9px;
+  @media only screen and (max-width: 400px) {
+    font-size: 5px;
+  }
+}
+.footerNumber {
+  font-weight: 700;
+}
+.upperSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.lowerSection {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+}
+.red {
+  color: #ea5455;
+  font-weight: 700;
+}
