@@ -4,7 +4,7 @@ import { CardProps } from "../types/components.types"
 import { baseStyle } from "./Layout"
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import DiscountOutlinedIcon from '@mui/icons-material/DiscountOutlined';
-import ChecklistOutlinedIcon from '@mui/icons-material/ChecklistOutlined';
+// import ChecklistOutlinedIcon from '@mui/icons-material/ChecklistOutlined';
 import StyleOutlinedIcon from '@mui/icons-material/StyleOutlined';
 
 export const Card = (
@@ -89,7 +89,7 @@ export const Card = (
                         </Typography>
                     </Grid>
                     <Grid container alignItems="center" gap={"0.5rem"}>
-                        <ChecklistOutlinedIcon htmlColor="#B5B5B5" />
+                        {/* <ChecklistOutlinedIcon htmlColor="#B5B5B5" /> */}
                         <Typography variant="subtitle2" fontSize={"0.5625rem"} color={"#363740"}>
                             Registration until: {deadline}
                         </Typography>
@@ -157,7 +157,7 @@ export const Card = (
 
 export const PromotionalCards = () => {
     return (
-        <Box sx={{ ...baseStyle, padding: "0", height: "100vh", overflow: "auto" }}>
+        <Box sx={{ ...baseStyle, padding:0, paddingLeft: "10px", height: "100vh", overflow: "auto" }} className="scroll-y">
             {
                 promotions.map((promotion, key) => {
                     return (
