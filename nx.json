@@ -1,6 +1,7 @@
 {
   "tasksRunnerOptions": {
     "default": {
+      "runner": "nx/tasks-runners/default",
       "options": {
         "cacheableOperations": [],
         "accessToken": "N2QxODcxZWMtODc0Yy00NjFhLTlkYzUtODliNDI4MjAyYjk3fHJlYWQtd3JpdGU="
