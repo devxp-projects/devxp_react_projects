@@ -19,3 +19,16 @@ Each app is run by running yarn plus the name of your cohort, - the environment.
     yarn ch3-api 
 ```
 We use [MUI](https://mui.com/) for UI. And only when absolutely very neccessary should another UI library or CSS be used directly. MUI has all the component you need
+
+## Deploying the project
+You can deploy the project to any hosting service. Just make sure you:
+
+- Change the build command to:
+    ```bash
+    yarn nx build [cohort]
+    ```
+
+- Change the serve command to:
+    ```bash
+    yarn nx serve [cohort] --prod
+    ```
