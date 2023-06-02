@@ -8,7 +8,8 @@
     "start": "nx serve food-hut --prod",
     "lint": "nx lint food-hut",
     "test": "jest --watch",
-    "ch5": "nx serve ch5"
+    "ch5": "nx serve ch5",
+    "ch6": "nx serve ch6"
   },
   "keywords": [],
   "author": "",
